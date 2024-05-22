@@ -1,32 +1,58 @@
 [
   {
     "id": 1,
-    "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
-    "genre": "Fiction"
+    "title": "The Thursday Murder Club",
+    "image": "https://m.media-amazon.com/images/I/51zW1P3TaSL._SL500_.jpg",
+    "genre": "Mystery",
+    "price": 350
   },
   {
     "id": 2,
-    "title": "1984",
-    "author": "George Orwell",
-    "genre": "Dystopian"
+    "title": "The Paris Apartment",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1645550948i/58468990.jpg",
+    "genre": "Thriller",
+    "price": 320
   },
   {
     "id": 3,
-    "title": "Pride and Prejudice",
-    "author": "Jane Austen",
-    "genre": "Romance"
+    "title": "The House in the Cerulean Sea",
+    "image": "https://cdn.waterstones.com/bookjackets/large/9781/5290/9781529087949.jpg",
+    "genre": "Fantasy",
+    "price": 450
   },
   {
     "id": 4,
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "genre": "Fiction"
+    "title": "Leave the World Behind",
+    "image": "https://m.media-amazon.com/images/I/71YBjMz8GfL._AC_UF1000,1000_QL80_.jpg",
+    "genre": "Thriller",
+    "price": 380
   },
   {
     "id": 5,
-    "title": "Moby Dick",
-    "author": "Herman Melville",
-    "genre": "Adventure"
+    "title": "The Lincoln Highway",
+    "image": "https://m.media-amazon.com/images/I/81NcjP6BiTL._AC_UF1000,1000_QL80_.jpg",
+    "genre": "Historical Fiction",
+    "price": 490
+  },
+  {
+    "id": 6,
+    "title": "The Midnight Library",
+    "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602190253l/52578297.jpg",
+    "genre": "Fantasy",
+    "price": 320
+  },
+  {
+    "id": 7,
+    "title": "Sea of Tranquility",
+    "image": "https://m.media-amazon.com/images/I/61Eunh9SwkL._SL500_.jpg",
+    "genre": "Science Fiction",
+    "price": 420
+  },
+  {
+    "id": 8,
+    "title": "The Seven Husbands of Evelyn Hugo",
+    "image": "https://media1.popsugar-assets.com/files/thumbor/W5_ebqzXlv48KC_SbCd5D9Rxs-g/0x490:1596x2086/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2022/03/24/832/n/1922283/3c31d384623cbf6a6a4fb7.74323057_/i/netflix-seven-husbands-evelyn-hugo-dream-cast.jpg",
+    "genre": "Romantic",
+    "price": 490
   }
 ]

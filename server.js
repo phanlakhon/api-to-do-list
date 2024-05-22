@@ -1,17 +1,17 @@
 const express = require("express");
 const app = express();
-const port = 5000;
+const port = 3001;
 
 app.use(express.json());
 
 let items = require("./book.json");
 
 app.get("/", (_req, res) => {
-  res.send("API is ready!, Try adding /items to the end of the URL.");
+  res.send("API is ready!, Try adding /books to the end of the URL.");
 });
 
 // GET all items
-app.get("/items", (_req, res) => {
+app.get("/books", (_req, res) => {
   if (items.length === 0) {
     return res.status(404).json({ message: "No items found" });
   }
@@ -19,7 +19,7 @@ app.get("/items", (_req, res) => {
 });
 
 // GET item by id
-app.get("/items/:id", (req, res) => {
+app.get("/books/:id", (req, res) => {
   const id = Number(req.params.id);
   const item = items.find((i) => i.id === id);
   if (!item) {
@@ -29,7 +29,7 @@ app.get("/items/:id", (req, res) => {
 });
 
 // POST create new item
-app.post("/items", (req, res) => {
+app.post("/books", (req, res) => {
   const { title } = req.body;
   if (!title) {
     return res.status(400).json({ message: "Title is required" });
@@ -44,9 +44,9 @@ app.post("/items", (req, res) => {
 });
 
 // PUT update item by id
-app.put("/items/:id", (req, res) => {
+app.put("/books/:id", (req, res) => {
   const id = Number(req.params.id);
-  const { title, author, genre } = req.body;
+  const { title, price, genre } = req.body;
   const item = items.find((i) => i.id === id);
   if (!item) {
     return res.status(404).json({ message: "Item not found" });
@@ -55,13 +55,13 @@ app.put("/items/:id", (req, res) => {
     return res.status(400).json({ message: "Name is required" });
   }
   item.title = title;
-  item.author = author || "";
+  item.price = price || "";
   item.genre = genre || "";
   res.json(item);
 });
 
 // DELETE item by id
-app.delete("/items/:id", (req, res) => {
+app.delete("/books/:id", (req, res) => {
   const id = Number(req.params.id);
   const index = items.findIndex((i) => i.id === id);
   if (index === -1) {
