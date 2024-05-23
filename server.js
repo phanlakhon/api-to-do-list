@@ -45,7 +45,7 @@ app.post("/books", (req, res) => {
   }
 
   const newItem = {
-    ...{ id: Math.max(...items.map((o) => o.id)) + 1 },
+    ...{ id: items.length > 0 ? Math.max(...items.map((o) => o.id)) + 1 : 1 },
     ...req.body,
   };
   items.push(newItem);
