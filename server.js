@@ -22,7 +22,8 @@ app.get("/", (_req, res) => {
 // GET all items
 app.get("/books", (_req, res) => {
   if (items.length === 0) {
-    return res.status(404).json({ message: "No items found" });
+    // return res.status(404).json({ message: "No items found" });
+    return res.json([]);
   }
   res.json(items);
 });
